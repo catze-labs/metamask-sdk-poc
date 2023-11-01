@@ -1,11 +1,12 @@
 import { MetaMaskSDKOptions } from "@metamask/sdk";
 import { http, createConfig } from "wagmi";
-import { mainnet, sepolia } from "wagmi/chains";
+import { mainnet, oasys } from "wagmi/chains";
 
 export const wagmiConfig = createConfig({
-  chains: [mainnet],
+  chains: [mainnet, oasys],
   transports: {
     [mainnet.id]: http(),
+    [oasys.id]: http(),
   },
 });
 
