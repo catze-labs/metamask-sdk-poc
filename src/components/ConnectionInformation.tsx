@@ -20,12 +20,12 @@ const ConnectInformation: React.FC = () => {
               {address}
             </dd>
           </div>
-          <div>
+          {/* <div>
             <dt className="font-bold text-xs">Connected network id</dt>
             <dd className="font-mono text-sm break-all p-1.5 bg-gray-100 rounded-md">
               {chainId}
             </dd>
-          </div>
+          </div> */}
         </dl>
       )}
       {!isConnected && !isConnecting && (

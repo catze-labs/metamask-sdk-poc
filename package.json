@@ -11,23 +11,23 @@
   "dependencies": {
     "@metamask/sdk": "^0.10.1",
     "@metamask/sdk-react": "^0.10.1",
-    "@tanstack/react-query": "beta",
+    "@tanstack/react-query": "^5.4.3",
     "clsx": "^2.0.0",
-    "next": "13.5.6",
-    "react": "^18",
-    "react-dom": "^18",
-    "viem": "2.0.0-alpha.17",
-    "wagmi": "^2.0.0-alpha.10"
+    "next": "14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "viem": "2.0.0-beta.0",
+    "wagmi": "^2.0.0-beta.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
+    "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "13.5.6"
+    "eslint-config-next": "14.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
