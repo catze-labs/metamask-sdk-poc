@@ -1,6 +1,6 @@
-import { metamaskSDKOptions, wagmiConfig } from "@/config";
+import { metamaskSDKOptions } from "@/config";
 import { useConnect } from "wagmi";
-import { injected } from "wagmi/connectors";
+import { metaMask } from "wagmi/connectors";
 
 const ConnectWalletButton: React.FC = () => {
   const { connectAsync } = useConnect();
@@ -9,7 +9,9 @@ const ConnectWalletButton: React.FC = () => {
     try {
       console.log(metamaskSDKOptions);
       await connectAsync({
-        connector: injected(), // TODO: Should be able to pass metamaskSDKOptions here
+        connector: metaMask({
+          dappMetadata: metamaskSDKOptions.dappMetadata,
+        }),
       });
     } catch (error) {
       console.error(error);
